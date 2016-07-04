@@ -11,7 +11,7 @@ module.exports = function() {
             passReqtoCallback: true
         },
         function(token, tokenSecret, profile, done) {
-            console.log(profile);
+            console.log(profile,"ttt");
             User.findOne({
                 'twitter.id': profile.id
             }, function(err, user) {

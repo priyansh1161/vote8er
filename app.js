@@ -17,7 +17,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-mongoose.connect('  mongodb://test:test@ds011785.mlab.com:11785/vote8er', function(err){
+mongoose.connect(' mongodb://test:test@ds011785.mlab.com:11785/vote8er', function(err){
     console.log('connected');
 });
 var port = process.env.PORT || 3000;
@@ -25,7 +25,7 @@ app.listen(port, function() {
     console.log('App listening on port 3000!');
 });
 
- app.use(favicon(path.join(__dirname + '/public/images/icon.ico')));
+ app.use(favicon());
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
