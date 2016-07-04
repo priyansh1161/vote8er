@@ -28,7 +28,7 @@ app.listen(port, function() {
 // app.use(favicon(path.join(___dirname + '/public/images/icon.ico')));
 app.use(function(req,res,next){
   if (req.url === '/favicon.ico'){
-    res.send();
+    res.end();
   }
   else{
     next();
