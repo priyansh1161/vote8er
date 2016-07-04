@@ -15,6 +15,7 @@ module.exports = function() {
             User.findOne({
                 'twitter.id': profile.id
             }, function(err, user) {
+                Console.log('szdxfcgvbhn');
                 if (user) {
                     done(null, user);
                 } 
