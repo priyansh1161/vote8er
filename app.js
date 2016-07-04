@@ -20,20 +20,13 @@ app.set('view engine', 'ejs');
 mongoose.connect('  mongodb://test:test@ds011785.mlab.com:11785/vote8er', function(err){
     console.log('connected');
 });
-var port =process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
     console.log('App listening on port 3000!');
 });
 
-// app.use(favicon(path.join(___dirname + '/public/images/icon.ico')));
-app.use(function(req,res,next){
-  if (req.url.indexOf('/favicon.ico')!=-1){
-    res.end();
-  }
-  else{
-    next();
-  }
-});
+ app.use(favicon(path.join(__dirname + '/public/images/icon.ico')));
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
