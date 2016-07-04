@@ -25,7 +25,7 @@ app.listen(port, function() {
     console.log('App listening on port 3000!');
 });
 
-app.use(favicon());
+app.use(favicon(path.join(___dirname + '/public/images/icon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
