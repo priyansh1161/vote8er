@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 body,.list-group-item:hover{
     background-color:#4595BB !important;
 }
