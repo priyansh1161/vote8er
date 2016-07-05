@@ -7,7 +7,7 @@ module.exports = function() {
     passport.use(new TwitterStrategy({
             consumerKey: "z5QR8UZ6Acrb0v6NcJChKgb5b",
             consumerSecret: "ODBF4ISJhPi3eFxzosfOygxHeEBH8wjre5AHgIvccB0CJMKKsY",
-            callbackURL: "http://127.0.0.1:3000/auth/twitter/callback",
+            callbackURL: "http://vote8er.herokuapp.com/auth/twitter/callback"
             // passReqtoCallback: true
         },
         function(token, tokenSecret, profile, done) {
