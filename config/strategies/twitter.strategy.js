@@ -8,7 +8,7 @@ module.exports = function() {
             consumerKey: "W35nt6WzxMiptHiLkrmJWbmd7",
             consumerSecret: "FyTKeLbWZnzSsLhFlCZUTS957ziNz2pK4oXymCO1HkeBGcuzws",
             callbackURL: "http://vote8er.herokuapp.com/auth/twitter/callback",
-            passReqtoCallback: true
+            
         },
         function(token, tokenSecret, profile, done) {
             console.log(profile,"ttt");

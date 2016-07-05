@@ -64,3 +64,9 @@ h3{
 .fa-fb{
     color: #365899;
 }
+button{
+    padding : 7px;
+    border-radius: 50% !important;
+    border: 2px solid black;
+
+}

@@ -23,6 +23,8 @@ $('document').ready(function(){
            },
            success : function(res){
            console.log(res,"pass");
+           var location = 'http://vote8er.herokuapp.com/polls/find/' + res.id;
+           window.location.replace(location);
        },
               error : function(err){
            console.log(err);
