@@ -5,8 +5,8 @@ var User = require('../../models/user.model');
 
 module.exports = function() {
     passport.use(new TwitterStrategy({
-            consumerKey: "W35nt6WzxMiptHiLkrmJWbmd7",
-            consumerSecret: "FyTKeLbWZnzSsLhFlCZUTS957ziNz2pK4oXymCO1HkeBGcuzws",
+            consumerKey: "z5QR8UZ6Acrb0v6NcJChKgb5b",
+            consumerSecret: "ODBF4ISJhPi3eFxzosfOygxHeEBH8wjre5AHgIvccB0CJMKKsY",
             callbackURL: "http://vote8er.herokuapp.com/auth/twitter/callback",
             
         },
