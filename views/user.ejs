@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src='/javascripts/app.client.js'></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/stylesheets/user.css">
 </head>
@@ -52,9 +53,9 @@
             <div class="jumbotron text-center">
                 <div class="list-group">
                     <div class='qb-group'>
-                        <a href="#" class="list-group-item">First item</a>
+                        <!--<a href="#" class="list-group-item">First item</a>
                         <a href="#" class="list-group-item">Second item</a>
-                        <a href="#" class="list-group-item">Third item</a>
+                        <a href="#" class="list-group-item">Third item</a>-->
                         <%for(var i=0;i<qst.length;i++){%>
                             <a href="<%='/polls/find/'+qst[i]._id %>" class="list-group-item"><%=qst[i].question%></a>
                             <%}%>
