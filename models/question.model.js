@@ -11,6 +11,6 @@ var questionSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    options: [{ field : String , value : Number }], // this will contain options for Question.
+    options: [{ field : String , value : Number }] // this will contain options for Question.
 });
 module.exports = mongoose.model('question', questionSchema);
